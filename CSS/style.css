@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Abel', sans-serif;
+}
+
+/* Titulo, donde dice arquitectura de computadoras */
+header{
+    background-color: #000000;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: azure;
+    letter-spacing: 5px;
+}
+
+/* Header that list all 4 units and projects */
+.unidades{
+    background-color: #100f0f;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: azure;
+    letter-spacing: 5px;
+    border-right: blue;
+    border-right-width: 20px;
+}
+
+/* Force all images to have the same size */
+img{
+    border-radius: 10px 10px 0px 0px;
+    width: 360px;
+    height: 202.5px;
+}
+
+/* Separacion entre titulo y texto */
+hr{
+    background-color:azure;
+    width: 500px; /* Ajustar tamano*/
+    height: 1px;
+    border: none;
+    margin: 20px 0; /* Separacion entre texto y hr*/
+    border-radius: 10%;
+}
+
+/* Container for flexboxes */
+section{
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the navigation menu, menu izquierdo */ 
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #3c0404;
+    color: azure;
+    padding: 20px;
+    font-size: 14.5px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #4c0505;
+    color: azure;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #100f0f;
+    padding: 10px;
+    text-align: center;
+    color: azure;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    }
+}
+
+/* Indent the text once */
+.indt{
+    text-indent: 25px;
+    color:rgb(235, 67, 67);
+    list-style-type: none;
+}
+
+/* Indent the text twice */
+.indt2{
+    text-indent: 50px;
+    color:#e2e2e2;
+}
+
+/* a is used for links */
+a:link{
+    text-decoration: none;
+    color: azure;
+}
+
+a:visited{
+    text-decoration: none;
+    color: azure;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Title for each unit, at the very start of the page */
+.title{
+    font-size: 46px;
+    font-weight: bold;
+}
+
+/* Div for my justified text */
+.text{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 5%;
+    font-family: 'Inter', sans-serif;
+}
+
+h4{
+    font-size: 23px;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2{
+    font-size: 34px;
+}
+
+font.tituloUnidad{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+font.subtitulo{
+    font-size: 30px;
+}
